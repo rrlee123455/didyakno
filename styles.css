@@ -1,0 +1,83 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    padding: 50px;
+    background-color: #1E2A38; /* Neutral dark blue */
+    color: #E0E0E0; /* Light gray text for readability */
+}
+
+/* Wrapper for layout structure */
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Ensures the wrapper fills the viewport */
+}
+
+.main-content {
+    flex: 0 0 auto; /* Prevents the content from growing */
+}
+
+.spacer {
+    flex-grow: 1; /* Allows the spacer to take up available space */
+}
+
+/* Header and main text */
+h1 {
+    color: #4C9AFF; /* Softer blue for emphasis */
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.tracker {
+    font-size: 20px;
+    font-weight: bold;
+    color: #E0E0E0; /* Pleasant light gray matching the body text */
+}
+
+.message {
+    color: #FFFFFF; /* White for key messages */
+}
+
+/* Button styling */
+button {
+    background-color: #4C9AFF; /* Medium blue for contrast */
+    color: white; /* High-contrast text */
+    font-size: 18px;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #357ABD; /* Slightly darker blue when hovered */
+}
+
+/* Fact paragraph styling */
+#fact {
+    font-size: 20px;
+    color: #A7BBCB; /* Softer blue-gray */
+    margin-top: 20px;
+}
+
+/* Footer styles */
+.footer {
+    background-color: #2E2E2E; /* Neutral dark gray */
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+/* Footer link styles */
+footer a {
+    color: #4C9AFF; /* A pleasing blue link color */
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: #357ABD; /* Slightly darker blue for hover effect */
+    text-decoration: underline;
+}
