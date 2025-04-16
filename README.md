@@ -56,6 +56,9 @@ CORS:
 After reading and seeing examples of how CORS is set up, it seemed easy enough. You had to make sure that the CORS policy is enabled and contained the relevant Access Controls that was needed. In my case, I needed Access-Control-Allow-Methods, Access-Control-Allow-Origin, and Access-Control-Allow-Headers.
 I also thought it was easy enough to duplicate across API Gateway, and Lambda Code. But after seeing it not work, I found resource stating that the s3 bucket needed a CORS policy as well. Eventually when I got around to Cloudfront, there as well. After mess with wildcard *, copying and pasting meticulously, and other failed attempts, the one thing that finally got it all to work was making sure the methods matched 1:1 across the board. That means, GET, and OPTIONS, were needed. As well as removing the dang "/" at the end of my URL in the Lambda code. So. Frustrating. But you got this.
 
+Debugging:
+Chrome developer tools, Command prompt (for CURL/nslookup), https://dnschecker.org/ for checking DNS, AWS Lambda test cases.
+
 Costs:
 Domain Name registration (didyakno.com)
 Web Application Firewall (Protection for your webserver)
